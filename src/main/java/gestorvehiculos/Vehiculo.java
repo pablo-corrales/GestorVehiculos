@@ -8,10 +8,10 @@ public abstract class Vehiculo {
     private Double precio;
     
     
-    public Vehiculo(Integer id, String descripcion, Double precio) {
+    public Vehiculo(Integer id, String descripcion) {
         this.id = id;
         this.descripcion = descripcion;
-        this.precio = precio;
+        this.precio = 0d;
     }
 
    

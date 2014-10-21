@@ -2,6 +2,6 @@ package gestorvehiculos;
 
 public abstract class VehiculoCreator {
 
-	public abstract Vehiculo createVehiculo(Integer id);
+	public abstract Vehiculo createVehiculo(Integer id, String descripcion);
 	
 }

@@ -20,8 +20,8 @@ public class VehiculoManager {
 		return creator;
 	}
 
-	public void creatorVehiculo(Integer id) {
-		this.vehiculo =  this.creator.createVehiculo(id);
+	public void creatorVehiculo(Integer id, String descripcion) {
+		this.vehiculo =  this.creator.createVehiculo(id, descripcion);
 	}
 
 }
