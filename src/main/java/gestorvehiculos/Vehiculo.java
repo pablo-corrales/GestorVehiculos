@@ -45,11 +45,14 @@ public abstract class Vehiculo {
         this.dias = dias;
     }
      
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
 
     @Override
     public String toString() {
         return this.getClass().getSimpleName() + " >> ID: " + this.getId() + " DESCRIPCION: "
-                + this.getDescripcion();
+                + this.getDescripcion() + " >> PRECIO: "+ this.getPrecio();
     }
 
 

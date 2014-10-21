@@ -1,4 +1,4 @@
-package gestorvehiculos;
+thpackage gestorvehiculos;
 
 public class BiciCreator {
 
