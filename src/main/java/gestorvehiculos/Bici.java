@@ -1,8 +1,8 @@
 package gestorvehiculos;
 
-public class Moto extends Vehiculo{
+public class Bici extends Vehiculo {
 	
-	public Moto(Integer id, String descripcion) {
+	public Bici(Integer id, String descripcion) {
         super(id, descripcion);
               
     }
@@ -10,15 +10,16 @@ public class Moto extends Vehiculo{
 	@Override
 	public Double calculaPrecio(Integer dias){
 		
-		if (dias <= 7) {
-			super.setPrecio(8d*dias);
+		if (dias > 2) {
+			super.setPrecio(6d +  ((dias - 2) * 2d));
 		}
 		else{
-			super.setPrecio(7d*dias);
+			super.setPrecio(dias * 3d);
 		}
 			
 		return super.getPrecio();
 		
 	}
+
 
 }
