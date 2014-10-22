@@ -14,7 +14,7 @@ public abstract class Vehiculo {
         this.descripcion = descripcion;
         this.precio = 0d;
         this.dias = dias;
-        this.categoria=Categoria.A;
+        this.categoria=null;
     }
 
    
