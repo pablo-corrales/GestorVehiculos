@@ -6,7 +6,8 @@ public abstract class Vehiculo {
     private String descripcion;
     private Integer dias;
     private Double precio;
-    private Categoria categoria;
+    @SuppressWarnings("unused")
+	private Categoria categoria;
     
     
     public Vehiculo(Integer id, String descripcion, Integer dias) {
