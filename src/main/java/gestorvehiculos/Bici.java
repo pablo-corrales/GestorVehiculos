@@ -2,8 +2,8 @@ package gestorvehiculos;
 
 public class Bici extends Vehiculo {
 	
-	public Bici(Integer id, String descripcion) {
-        super(id, descripcion);
+	public Bici(Integer id, String descripcion, Integer dias) {
+        super(id, descripcion, dias);
               
     }
 	
@@ -20,6 +20,13 @@ public class Bici extends Vehiculo {
 		return super.getPrecio();
 		
 	}
-
+	
+	@Override
+	public void setCategoria(Categoria categoria) {}
+	
+	@Override
+    public String toString() {
+		return this.getClass().getSimpleName();
+    }
 
 }

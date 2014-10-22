@@ -6,12 +6,15 @@ public abstract class Vehiculo {
     private String descripcion;
     private Integer dias;
     private Double precio;
+    private Categoria categoria;
     
     
-    public Vehiculo(Integer id, String descripcion) {
+    public Vehiculo(Integer id, String descripcion, Integer dias) {
         this.id = id;
         this.descripcion = descripcion;
         this.precio = 0d;
+        this.dias = dias;
+        this.categoria=Categoria.A;
     }
 
    
@@ -33,6 +36,9 @@ public abstract class Vehiculo {
 
     protected abstract Double calculaPrecio(Integer dias); 
     
+    protected abstract void setCategoria(Categoria categoria); 
+    
+    
     public void setId(Integer id) {
         this.id = id;
     }
@@ -48,7 +54,8 @@ public abstract class Vehiculo {
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
-
+    
+    
     @Override
     public String toString() {
         return this.getClass().getSimpleName() + " >> ID: " + this.getId() + " DESCRIPCION: "

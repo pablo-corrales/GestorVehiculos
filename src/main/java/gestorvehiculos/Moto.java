@@ -1,9 +1,10 @@
 package gestorvehiculos;
 
+
 public class Moto extends Vehiculo{
 	
-	public Moto(Integer id, String descripcion) {
-        super(id, descripcion);
+	public Moto(Integer id, String descripcion, Integer dias) {
+        super(id, descripcion, dias);
               
     }
 	
@@ -20,5 +21,16 @@ public class Moto extends Vehiculo{
 		return super.getPrecio();
 		
 	}
+	
+	
+	@Override
+	public void setCategoria(Categoria categoria) {}
+		
+ 		
+	
+	@Override
+    public String toString() {
+		return this.getClass().getSimpleName();
+    }
 
 }
