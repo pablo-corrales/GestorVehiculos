@@ -35,7 +35,7 @@ public abstract class Vehiculo {
     	return this.precio;
     }
 
-    protected abstract Double calculaPrecio(Integer dias); 
+    public abstract Double calculaPrecio(Integer dias); 
     
     protected abstract void setCategoria(Categoria categoria); 
     
