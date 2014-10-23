@@ -1,7 +1,9 @@
 package gestorvehiculos;
 
+
 public class VehiculoManager {
-	private Vehiculo vehiculo;
+		
+	private Vehiculo vehiculo ;
 	private VehiculoCreator creator;
 	
 	
@@ -9,11 +11,11 @@ public class VehiculoManager {
     }
 	
     public Vehiculo getVehiculo() {
-		return vehiculo;
+		return this.vehiculo;
 	}
 
-	public void setVehiculo(Vehiculo vehiculo) {
-		this.vehiculo = vehiculo;
+	public void setVehiculo(Vehiculo v) {
+		this.vehiculo = v;
 	}
 
 	public VehiculoCreator getCreator() {
@@ -24,8 +26,5 @@ public class VehiculoManager {
 		this.creator = vehiculoCreator;
 	}
 
-	public void creatorVehiculo(Integer id, String descripcion, Integer dias) {
-		this.vehiculo =  this.creator.createVehiculo(id, descripcion, dias);
-	}
-
+	
 }
